@@ -1,0 +1,18 @@
+version: '3.8'
+
+volumes:
+  redis_data: {}
+
+services:
+  prometheus-http-sd:
+    build: ./
+    container_name: prometheus-http-sd
+    networks:
+      - monitoring
+    ports:
+      - "9990:9990"
+
+networks:
+  monitoring:
+    driver: bridge
+
