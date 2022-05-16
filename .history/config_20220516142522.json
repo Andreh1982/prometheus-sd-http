@@ -1,20 +1,20 @@
 [
     {
-        "targets": ["teste.com:80"],
+        "targets": ["incident-webhook.olist.io:80"],
         "labels": {
             "__metrics_path__": "/metrics"
         }
     },
 
     {
-        "targets": ["teste.com:9090"],
+        "targets": ["alertsplat.olist.io:9090"],
         "labels": {
             "__metrics_path__": "/metrics"
         }
     },
 
     {
-        "targets": ["test.com:9093"],
+        "targets": ["alertsplat.olist.io:9093"],
         "labels": {
             "__metrics_path__": "/metrics"
         }
